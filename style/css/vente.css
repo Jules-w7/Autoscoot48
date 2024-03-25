@@ -1,0 +1,89 @@
+body {
+    font-family: 'Open-sans', sans-serif;
+}
+
+.logo {
+    display: flex; 
+}
+
+#blueCar {
+    margin-top: 9px;
+    height: 74px;
+}
+
+#carColor {
+    border-radius: 10px;
+    border: solid black;
+    border-width: 2px;
+    margin-bottom: 10px;
+}
+
+#carPrice {
+    border-radius: 10px;
+    border: solid black;
+    border-width: 2px;
+    margin-bottom: 10px;
+}
+
+#carModel {
+    border-radius: 10px;
+    border: solid black;
+    border-width: 2px;
+    margin-bottom: 10px;
+}
+
+#carDist {
+    border-radius: 10px;
+    border: solid black;
+    border-width: 2px;
+    margin-bottom: 10px;
+}
+
+#carDealerAd {
+    border-radius: 10px;
+    border: solid black;
+    border-width: 2px;
+    margin-bottom: 10px;
+}
+
+#carDescription {
+    border-radius: 10px;
+    border: solid black;
+    border-width: 2px;
+    margin-bottom: 10px;
+}
+
+#idCarEngType {
+    border-radius: 10px;
+    border: solid black;
+    border-width: 2px;
+    margin-bottom: 10px;
+}
+
+#idCarBrand {
+    border-radius: 10px;
+    border: solid black;
+    border-width: 2px;
+    margin-bottom: 10px;
+}
+
+#carImage {
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: solid black;
+    border-width: 2px;
+}
+
+.firstRow {
+    float: left;
+}
+
+.secondRow {
+    float: left;
+    margin-top: 2.7cm;
+}
+
+.thirdRow {
+    float: right;
+    margin-top: 2.7cm; 
+}

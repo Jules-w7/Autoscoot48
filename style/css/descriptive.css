@@ -1,0 +1,12 @@
+body {
+    font-family: 'Open-sans', sans-serif;
+}
+
+.logo {
+    display: flex; 
+}
+
+#blueCar {
+    margin-top: 9px;
+    height: 74px;
+}
