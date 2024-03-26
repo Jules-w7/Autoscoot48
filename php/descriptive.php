@@ -17,12 +17,28 @@
         <img id="blueCar" src="../images/Capture.PNG">
     </div>
     <?php 
-        $connexion = mysqli_connect('localhost', 'root', 'root', 'db_autoscoot48');
+        if(isset($_GET['id'])) {
+            $carId = $_GET['id'];
 
-        $resultat = mysqli_query($connexion, 'SELECT t_cars.carDealerAd, t_carengtype.cetType, t_carbrand.cbrName,t_cars.carDescription, t_cars.carPrice, t_cars.carModel ,t_cars.carDealerAd, t_cars.carColor, t_cars.carDist FROM `t_cars` INNER JOIN `t_carengtype` ON t_cars.idCarEngType = t_carengtype.idCarEngType INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand'); 
+            $connexion = mysqli_connect('localhost', 'root', 'root', 'db_autoscoot48');
 
-        while ($ligne = mysqli_fetch_assoc($resultat)) {
-            echo "<div id='carAnnonce'>" . $ligne['carColor'] . "<br>" . $ligne['carPrice'] . "CHF" . "<br>" . $ligne['carModel'] . "<br>" . $ligne['carDist'] . "Km" . '<br>' . $ligne['carDealerAd'] . '<br>' . $ligne['carDescription'] . '<br>' . $ligne['cetType'] . '<br>' . $ligne['cbrName'] . '</div>' . '<br>';
+            $query = "SELECT t_cars.carDealerAd, t_carbrand.cbrName, t_cars.carDescription, t_cars.carPrice FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand WHERE t_cars.idCar = $carId";
+
+            $result = mysqli_query($connexion, $query);
+
+            if($result) {
+                $carDetails = mysqli_fetch_assoc($result);
+    ?>
+                <h2><?php echo $carDetails['carDealerAd']; ?></h2>
+                <p>Brand: <?php echo $carDetails['cbrName']; ?></p>
+                <p>Description: <?php echo $carDetails['carDescription']; ?></p>
+                <p>Price: <?php echo $carDetails['carPrice']; ?> CHF</p>
+    <?php
+            } else {
+                echo "Failed to retrieve car details.";
+            }
+        } else {
+            echo "No car ID provided.";
         }
     ?>
 </body>

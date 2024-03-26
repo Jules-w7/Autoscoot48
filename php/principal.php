@@ -19,9 +19,9 @@
         <img id="blueCar" src="../images/Capture.PNG">
     </div>
     <div class="upperBar">
-        <p>Marque</p><img src="../images/Capturefleche.PNG" id="flechedetail">
-        <p>Couleur</p><img src="../images/Capturefleche.PNG" id="flechedetail">
-        <p>Kilométrage</p><img src="../images/Capturefleche.PNG" id="flechedetail">
+        <p id="Brand">Marque</p><img src="../images/Capturefleche.PNG" id="flechedetail">
+        <p id="Color">Couleur</p><img src="../images/Capturefleche.PNG" id="flechedetail">
+        <p id="Distance">Kilométrage</p><img src="../images/Capturefleche.PNG" id="flechedetail">
         <p id="Redirect"><a href="vente.php" id="SellCar">Publier une annonce</a></p>
     </div>
 <body>
@@ -29,10 +29,15 @@
     <?php 
         $connexion = mysqli_connect('localhost', 'root', 'root', 'db_autoscoot48');
 
-        $resultat = mysqli_query($connexion, 'SELECT t_cars.carDealerAd, t_carbrand.cbrName, t_cars.carDescription, t_cars.carPrice FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand'); 
+        $resultat = mysqli_query($connexion, 'SELECT t_cars.idCar, t_cars.carDealerAd, t_carbrand.cbrName, t_cars.carDescription, t_cars.carPrice FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand'); 
 
         while ($ligne = mysqli_fetch_assoc($resultat)) {
-            echo "<div id='carAnnonce' onclick=location.href='descriptive.php'>" . $ligne['carDealerAd'] . "<br>" . $ligne['cbrName'] . "<br>" . $ligne['carDescription'] . "<br>" . $ligne['carPrice'] . "CHF" . '</div>' . '<br>';
+    ?>
+        <div id='carAnnonce' onclick="location.href='descriptive.php?id=<?php echo $ligne['idCar']; ?>'">
+            <?php echo $ligne['carDealerAd'] . "<br>" . $ligne['cbrName'] . "<br>" . $ligne['carDescription'] . "<br>" . $ligne['carPrice'] . " CHF"; ?>
+        </div>
+        <br>
+    <?php
         }
     ?>
 </body>
