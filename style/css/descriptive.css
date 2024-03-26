@@ -10,3 +10,25 @@ body {
     margin-top: 9px;
     height: 74px;
 }
+
+#left {
+    float: left;
+    width: 406px;
+}
+
+#Middle {
+    float: left;
+    width: 406px;
+}
+
+#Right {
+    float: left;
+    width: 406px;
+}
+
+#separation {
+    background-color: grey;
+    width: 192vh;
+    height: 5px;
+    border-radius: 10px;
+}

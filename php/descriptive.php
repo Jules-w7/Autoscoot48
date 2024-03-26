@@ -28,15 +28,26 @@
 
             if($result) {
                 $carDetails = mysqli_fetch_assoc($result);
-    ?>
-                <p>Marque: <?php echo $carDetails['cbrName']; ?></p>
-                <p>Modèle: <?php echo $carDetails['carModel']; ?></p>
-                <p>Couleur: <?php echo $carDetails['carColor']; ?></p>
-                <p>Description: <?php echo $carDetails['carDescription']; ?></p>
-                <p>Moteur: <?php echo $carDetails['cetType']; ?></p>
-                <p>Kilométrage: <?php echo $carDetails['carDist']; ?> Km</p>
-                <p>Prix: <?php echo $carDetails['carPrice']; ?> CHF</p>
-                <p>Adresse: <?php echo $carDetails['carDealerAd']; ?></p>  
+    ?> 
+            <div id="description">
+                <div id="left">
+                    <p>Marque: <?php echo $carDetails['cbrName']; ?></p>
+                    <p>Modèle: <?php echo $carDetails['carModel']; ?></p>
+                    <p>Couleur: <?php echo $carDetails['carColor']; ?></p>        
+                </div>
+                <div id="Middle">
+                    <p>Moteur: <?php echo $carDetails['cetType']; ?></p>
+                    <p>Kilométrage: <?php echo $carDetails['carDist']; ?> Km</p> 
+                </div>
+                <div id="Right">
+                    <p>Prix: <?php echo $carDetails['carPrice']; ?> CHF</p>
+                    <p>Adresse: <?php echo $carDetails['carDealerAd']; ?></p>  
+                </div>
+                <hr id="separation">
+                <div id="Bottom">
+                    <p>Description: <?php echo $carDetails['carDescription']; ?></p>
+                </div>
+            </div>
     <?php
             } else {
                 echo "Failed to retrieve car details.";
