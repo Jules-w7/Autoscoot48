@@ -44,8 +44,28 @@ body {
     background-color: #4A9BD6;
 }
 
-#flechedetail {
-    height: 50px;
+#Distance {
+    border: #4A9BD6;
+    background-color: #4A9BD6;
+    color: white;
+    margin-top: 18.7px;
+    font-size: medium;
+}
+
+#Color {
+    border: #4A9BD6;
+    background-color: #4A9BD6;
+    color: white;
+    margin-top: 18.7px;
+    font-size: medium;
+}
+
+#Brand {
+    border: #4A9BD6;
+    background-color: #4A9BD6;
+    color: white;
+    margin-top: 18.7px;
+    font-size: medium;
 }
 
 #SellCar {

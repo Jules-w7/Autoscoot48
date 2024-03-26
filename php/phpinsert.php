@@ -13,7 +13,7 @@
             
             $carColor = $_REQUEST['carColor'];
             $carPrice = $_REQUEST['carPrice'];
-            $carType = $_REQUEST['carType'];
+            $carType = $_REQUEST['carModel'];
             $carDist = $_REQUEST['carDist'];
             $carDealerAd = $_REQUEST['carDealerAd'];
             $carDescription = $_REQUEST['carDescription'];

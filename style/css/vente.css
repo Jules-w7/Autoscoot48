@@ -74,16 +74,21 @@ body {
     border-width: 2px;
 }
 
-.firstRow {
+.Left {
     float: left;
+    width: 320px
 }
 
-.secondRow {
+.Middle {
     float: left;
+    width: 316px;
+    height: 270px;
     margin-top: 2.7cm;
 }
 
-.thirdRow {
-    float: right;
-    margin-top: 2.7cm; 
+.Right {
+    float: left;
+    width: 316px;
+    height: 270px;
+    margin-top: 2.7cm;
 }

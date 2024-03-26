@@ -22,7 +22,7 @@
         </div>
         <form action="phpinsert.php" method="POST">
             <div class="form">
-                <div class="firstRow">
+                <div class="Left">
                     <label for="carImage">Ajouter une image du véhicule:</label><br>
                     <input type="file" id="carImage" name="carImage"><br>
 
@@ -47,7 +47,7 @@
 
                     <input type="submit" id="submitButton">
                 </div>
-                <div class="secondRow">
+                <div class="Middle">
                     <label for= "idCarEngType">Car engine type:</label><br>
                     <select id="idCarEngType" name="idCarEngType">
                         <?php
@@ -61,7 +61,7 @@
                     <label for="carDist">Car distance:</label><br>
                     <input type="text" id="carDist" name="carDist"><br> 
                 </div>
-                <div class="thirdRow">
+                <div class="Right">
                     <label for="carPrice">Car Price:</label><br>
                     <input type="text" id="carPrice" name="carPrice" require><br> 
 

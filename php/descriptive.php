@@ -29,14 +29,14 @@
             if($result) {
                 $carDetails = mysqli_fetch_assoc($result);
     ?>
-                <h2><?php echo $carDetails['carDealerAd']; ?></h2>
                 <p>Marque: <?php echo $carDetails['cbrName']; ?></p>
                 <p>Modèle: <?php echo $carDetails['carModel']; ?></p>
-                <p>Description: <?php echo $carDetails['carDescription']; ?></p>
-                <p>Prix: <?php echo $carDetails['carPrice']; ?> CHF</p>
-                <p>Kilométrage: <?php echo $carDetails['carDist']; ?> Km</p>
                 <p>Couleur: <?php echo $carDetails['carColor']; ?></p>
+                <p>Description: <?php echo $carDetails['carDescription']; ?></p>
                 <p>Moteur: <?php echo $carDetails['cetType']; ?></p>
+                <p>Kilométrage: <?php echo $carDetails['carDist']; ?> Km</p>
+                <p>Prix: <?php echo $carDetails['carPrice']; ?> CHF</p>
+                <p>Adresse: <?php echo $carDetails['carDealerAd']; ?></p>  
     <?php
             } else {
                 echo "Failed to retrieve car details.";
