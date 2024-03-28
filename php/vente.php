@@ -18,7 +18,7 @@
         <div class="logo">
             <img id="comeback" src="../images/Comeback.PNG" onclick="location.href='principal.php'">
             <h1>Autoscoot48</h1>
-            <img id="blueCar" src="../images/Capture.PNG">
+            <img id="blueCar" src="../images/Capture2.PNG">
         </div>
         <form action="phpinsert.php" method="POST">
             <div class="form">

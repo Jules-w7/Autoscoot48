@@ -53,10 +53,24 @@ body {
 
 #Contact {
     background-color: #4A9BD6;
-    border: none;
+    border: #4A9BD6;
     border-radius: 10px;
-    width: 6cm;
+    width: 260.99px;
     height: 1cm;
+    transition: 0.5s;
     color: white;
     font-weight: 500;
+    margin-left: 811.98px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#Contact:hover {
+    background-position: right center;
+    border: solid #4A9BD6;
+    color: #4A9BD6;
+    background-color: white;
+    box-shadow: 10cm;
+    transform: scale(0.95);
 }

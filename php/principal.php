@@ -16,7 +16,7 @@
 </head>
     <div class="logo">
         <h1>Autoscoot48</h1>
-        <img id="blueCar" src="../images/Capture.PNG">
+        <img id="blueCar" src="../images/Capture2.PNG">
     </div>
     <div class="upperBar">
         <p id="Brand">Marque</p><img src="../images/Capturefleche.PNG" id="flechedetail">

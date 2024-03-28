@@ -14,7 +14,7 @@
     <div class="logo">
         <img id="comeback" src="../images/Comeback.PNG" onclick="location.href='principal.php'">
         <h1>Autoscoot48</h1>
-        <img id="blueCar" src="../images/Capture.PNG">
+        <img id="blueCar" src="../images/Capture2.PNG">
     </div>
     <?php 
         if(isset($_GET['id'])) {
@@ -29,7 +29,7 @@
             if($result) {
                 $carDetails = mysqli_fetch_assoc($result);
     ?> 
-            <button id="Contact">Contactez l'annonceur</button>
+            <button id="Contact" onclick="window.location.href='principal.php'">Contactez l'annonceur</button>
             <div id="description">
                 <div id="left">
                     <p>Marque: <?php echo $carDetails['cbrName']; ?></p>

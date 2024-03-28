@@ -37,6 +37,7 @@ body {
     box-shadow: black;
     box-sizing: border-box;
     text-align: center;
+    transition: 100ms;
 }
 
 #carAnnonce:hover {
