@@ -29,6 +29,7 @@
             if($result) {
                 $carDetails = mysqli_fetch_assoc($result);
     ?> 
+            <button id="Contact">Contactez l'annonceur</button>
             <div id="description">
                 <div id="left">
                     <p>Marque: <?php echo $carDetails['cbrName']; ?></p>
@@ -36,11 +37,11 @@
                     <p>Couleur: <?php echo $carDetails['carColor']; ?></p>        
                 </div>
                 <div id="Middle">
-                    <p>Moteur: <?php echo $carDetails['cetType']; ?></p>
-                    <p>Kilométrage: <?php echo $carDetails['carDist']; ?> Km</p> 
+                    <p id="Moteur">Moteur: <?php echo $carDetails['cetType']; ?></p>
+                    <p id="Kilometrage">Kilométrage: <?php echo $carDetails['carDist']; ?> Km</p> 
                 </div>
                 <div id="Right">
-                    <p>Prix: <?php echo $carDetails['carPrice']; ?> CHF</p>
+                    <h1 id="Prix">Prix: <?php echo $carDetails['carPrice']; ?> CHF</h1>
                     <p>Adresse: <?php echo $carDetails['carDealerAd']; ?></p>  
                 </div>
                 <hr id="separation">

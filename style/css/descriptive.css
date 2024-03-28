@@ -19,11 +19,13 @@ body {
 #Middle {
     float: left;
     width: 406px;
+    height: 121.25px;
 }
 
 #Right {
     float: left;
     width: 406px;
+    height: 121.25px;
 }
 
 #separation {
@@ -31,4 +33,30 @@ body {
     width: 192vh;
     height: 5px;
     border-radius: 10px;
+}
+
+#Moteur {
+    margin-top: 51.09px;
+    height: 19.10px;
+}
+
+#Kilometrage {
+    margin-top: 16px;
+    height: 19.10px;
+}
+
+#Prix {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    height: 38.19px;
+}
+
+#Contact {
+    background-color: #4A9BD6;
+    border: none;
+    border-radius: 10px;
+    width: 6cm;
+    height: 1cm;
+    color: white;
+    font-weight: 500;
 }
