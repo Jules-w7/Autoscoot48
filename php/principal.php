@@ -16,7 +16,7 @@
 </head>
     <div class="logo">
         <h1>Autoscoot48</h1>
-        <img id="blueCar" src="../images/Capture2.PNG">
+        <img id="blueCar" src="../images/Capture2.PNG" onclick="">
     </div>
     <div class="upperBar">
         <p id="Brand">Marque</p><img src="../images/Capturefleche.PNG" id="flechedetail">
@@ -41,4 +41,5 @@
         }
     ?>
 </body>
+    <!-- <img src="../images/Pedro_asssitant.PNG" id="PEDRO"> -->
 </html>

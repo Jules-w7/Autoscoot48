@@ -40,10 +40,15 @@
                     <input type="text" id="carModel" name="carModel" require><br> 
 
                     <label for="carColor">Ajouter une couleur:</label><br>
-                    <input type="text" id="carColor" name="carColor"><br> 
+                    <input type="text" id="carColor" name="carColor"><br>
+
+                    <br>
+                    <hr id="separation">
 
                     <label for="carDescription">Ajouter une description:</label><br>
                     <input type="text" id="carDescription" name="carDescription"><br>
+                    
+                    <br>
 
                     <input type="submit" id="submitButton">
                 </div>

@@ -5,3 +5,4 @@ carAnnonces.forEach(function(carAnnonce) {
         window.location.href = 'descriptive.php?id=' + carId;
     });
 });
+

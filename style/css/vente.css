@@ -12,83 +12,111 @@ body {
 }
 
 #carColor {
-    border-radius: 10px;
-    border: solid black;
+    border-radius: 5px;
+    border: solid rgb(204, 204, 204);
     border-width: 2px;
     margin-bottom: 10px;
 }
 
 #carPrice {
-    border-radius: 10px;
-    border: solid black;
+    border-radius: 5px;
+    border: solid rgb(204, 204, 204);
     border-width: 2px;
     margin-bottom: 10px;
 }
 
 #carModel {
-    border-radius: 10px;
-    border: solid black;
+    border-radius: 5px;
+    border: solid rgb(204, 204, 204);
     border-width: 2px;
     margin-bottom: 10px;
 }
 
 #carDist {
-    border-radius: 10px;
-    border: solid black;
+    border-radius: 5px;
+    border: solid rgb(204, 204, 204);
     border-width: 2px;
     margin-bottom: 10px;
 }
 
 #carDealerAd {
-    border-radius: 10px;
-    border: solid black;
+    border-radius: 5px;
+    border: solid rgb(204, 204, 204);
     border-width: 2px;
     margin-bottom: 10px;
 }
 
 #carDescription {
-    border-radius: 10px;
-    border: solid black;
+    border-radius: 5px;
+    border: solid rgb(204, 204, 204);
     border-width: 2px;
     margin-bottom: 10px;
 }
 
 #idCarEngType {
-    border-radius: 10px;
-    border: solid black;
+    border-radius: 5px;
+    border: solid rgb(204, 204, 204);
     border-width: 2px;
     margin-bottom: 10px;
 }
 
 #idCarBrand {
-    border-radius: 10px;
-    border: solid black;
+    border-radius: 5px;
+    border: solid rgb(204, 204, 204);
     border-width: 2px;
     margin-bottom: 10px;
 }
 
 #carImage {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    border: solid rgb(204, 204, 204);
     border-radius: 10px;
-    border: solid black;
     border-width: 2px;
 }
 
 .Left {
     float: left;
-    width: 320px
+    width: 406px;
+    height: 121.25px;
 }
 
 .Middle {
     float: left;
-    width: 316px;
-    height: 270px;
+    width: 406px;
+    height: 121.25px;
     margin-top: 2.7cm;
 }
 
 .Right {
     float: left;
-    width: 316px;
-    height: 270px;
+    width: 406px;
+    height: 121.25px;
     margin-top: 2.7cm;
+}
+
+#submitButton {
+    background-color: #4A9BD6;
+    border: none;
+    color: white;
+    width: 260.99px;
+    height: 1cm;
+    transition: 1s;
+    border-radius: 10px;
+    border: solid #4A9BD6;
+    border-width: 1.5px;
+}
+
+#submitButton:hover {
+    color: #4A9BD6;
+    background-color: white;
+    transform: scale(0.95);
+    border: solid#4A9BD6;
+    border-width: 1.5px;
+}
+
+#separation {
+    background-color: grey;
+    width: 192vh;
+    height: 5px;
+    border-radius: 10px; 
 }
