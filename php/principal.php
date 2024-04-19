@@ -47,27 +47,22 @@
 <body>
     <p></p>
     <?php 
-        $connexion = mysqli_connect('localhost', 'root', 'root', 'db_autoscoot48');
-
+    $connexion = mysqli_connect('localhost', 'root', 'root', 'db_autoscoot48');
+        $query = "SELECT t_cars.idCar, t_cars.carDealerAd, t_carbrand.cbrName, t_cars.carDescription, t_cars.carPrice FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand";
+        
         if(isset($_GET['brand'])) {
             $brand = mysqli_real_escape_string($connexion, $_GET['brand']);
-            $query = "SELECT t_cars.idCar, t_cars.carDealerAd, t_carbrand.cbrName, t_cars.carDescription, t_cars.carPrice FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand WHERE t_carbrand.cbrName LIKE '%$brand%'";
-        } else {
-            $query = "SELECT t_cars.idCar, t_cars.carDealerAd, t_carbrand.cbrName, t_cars.carDescription, t_cars.carPrice FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand";
+            $query .= " WHERE t_carbrand.cbrName LIKE '%$brand%'";
         }
 
         if(isset($_GET['color'])) {
             $color = mysqli_real_escape_string($connexion, $_GET['color']);
-            $query = "SELECT t_cars.idCar, t_cars.carDealerAd, t_carBrand.cbrName, t_cars.carDescription, t_cars.carPrice, t_cars.carColor FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand WHERE t_cars.carColor LIKE '%$color%'";
-        } else {
-            $query = "SELECT t_cars.idCar, t_cars.carDealerAd, t_carbrand.cbrName, t_cars.carDescription, t_cars.carPrice FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand";
+            $query .= " WHERE t_cars.carColor LIKE '%$color%'";
         }
 
         if(isset($_GET['distance'])) {
             $distance = mysqli_real_escape_string($connexion, $_GET['distance']);
-            $query = "SELECT t_cars.idCar, t_cars.carDealerAd, t_carBrand.cbrName, t_cars.carDescription, t_cars.carPrice, t_cars.carDist FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carBrand.idCarBrand WHERE t_cars.carDist LIKE '%$distance%'";
-        } else {
-            $query = "SELECT t_cars.idCar, t_cars.carDealerAd, t_carBrand.cbrName, t_cars.carDescription, t_cars.carPrice FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand";
+            $query .= " WHERE t_cars.carDist LIKE '%$distance%'";
         }
 
         $resultat = mysqli_query($connexion, $query); 
