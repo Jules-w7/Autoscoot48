@@ -24,13 +24,10 @@
             $sql = "INSERT INTO t_cars (carColor,carPrice,carModel,carDist,carDealerAd,carDescription,idCarEngType,idCarBrand,carImage) VALUES ('$carColor','$carPrice','$carType','$carDist','$carDealerAd','$carDescription','$idCarEngType','$idCarBrand','$carImage')";
 
             if(mysqli_query($connexion, $sql)){
-                echo "<h3>data stored in a database successfully."
-                    . " Please browse your localhost php my admin"
-                    . " to view the updated data</h3>";
-
-                echo nl2br("\n$carColor\n $carPrice\n $carType\n $carDist\n $carDealerAd\n $carDescription\n $idCarEngType\n $idCarBrand");
+                echo "The annonce has succesfully been published!";
+                
             } else{
-                echo "ERROR: Hush! Sorry $sql. "
+                echo "Oops an error has occured!"
                     . mysqli_error($connexion);
             }
 

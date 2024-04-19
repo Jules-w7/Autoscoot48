@@ -29,7 +29,7 @@
             if($result) {
                 $carDetails = mysqli_fetch_assoc($result);
     ?> 
-            <button id="Contact" onclick="window.location.href='principal.php'">Contactez l'annonceur</button>
+            
             <div id="description">
                 <div id="left">
                     <p>Marque: <?php echo $carDetails['cbrName']; ?></p>
@@ -47,6 +47,9 @@
                 <hr id="separation">
                 <div id="Bottom">
                     <p>Description: <?php echo $carDetails['carDescription']; ?></p>
+                </div>
+                <div id="ContactButton">
+                    <button id="Contact" onclick="window.location.href='principal.php'">Contactez l'annonceur</button>
                 </div>
             </div>
     <?php

@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <script src="../style/js/index.js"></script>
+    <script type="text/javascript" src="../style/js/index.js"></script>
     <style>
         <?php include "../style/css/principal.css"
         ?>
@@ -19,17 +19,44 @@
         <img id="blueCar" src="../images/Capture2.PNG" onclick="">
     </div>
     <div class="upperBar">
-        <p id="Brand">Marque</p><img src="../images/Capturefleche.PNG" id="flechedetail">
-        <p id="Color">Couleur</p><img src="../images/Capturefleche.PNG" id="flechedetail">
-        <p id="Distance">Kilométrage</p><img src="../images/Capturefleche.PNG" id="flechedetail">
+        <p id="Brand">Marque</p><img src="../images/Capturefleche.PNG" id="flechedetail" onclick="showBrand()">
+        <p id="Color">Couleur</p><img src="../images/Capturefleche.PNG" id="flechedetail" onclick="showColor()">
+        <p id="Distance">Kilométrage</p><img src="../images/Capturefleche.PNG" id="flechedetail" onclick="showDistance()">
         <p id="Redirect"><a href="vente.php" id="SellCar">Publier une annonce</a></p>
+    </div>
+    <div id="Filters">
+        <div id="filter1" style="display: none;">
+            <form method="get">
+                <input type="text" name="brand" placeholder="Search by brand">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+        <div id="filter2" style="display: none;">
+            <form method="get">
+                <input type="text" name="color" placeholder="Search by color">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+        <div id="filter3" style="display: none;">
+            <form method="get">
+                <input type="text" name="distance" placeholder="Search by distance">
+                <input type="submit" value="Search">
+            </form>
+        </div>
     </div>
 <body>
     <p></p>
     <?php 
         $connexion = mysqli_connect('localhost', 'root', 'root', 'db_autoscoot48');
 
-        $resultat = mysqli_query($connexion, 'SELECT t_cars.idCar, t_cars.carDealerAd, t_carbrand.cbrName, t_cars.carDescription, t_cars.carPrice FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand'); 
+        if(isset($_GET['brand'])) {
+            $brand = mysqli_real_escape_string($connexion, $_GET['brand']);
+            $query = "SELECT t_cars.idCar, t_cars.carDealerAd, t_carbrand.cbrName, t_cars.carDescription, t_cars.carPrice FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand WHERE t_carbrand.cbrName LIKE '%$brand%'";
+        } else {
+            $query = "SELECT t_cars.idCar, t_cars.carDealerAd, t_carbrand.cbrName, t_cars.carDescription, t_cars.carPrice FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand";
+        }
+
+        $resultat = mysqli_query($connexion, $query); 
 
         while ($ligne = mysqli_fetch_assoc($resultat)) {
     ?>
@@ -40,6 +67,7 @@
     <?php
         }
     ?>
+
 </body>
     <!-- <img src="../images/Pedro_asssitant.PNG" id="PEDRO"> -->
 </html>
