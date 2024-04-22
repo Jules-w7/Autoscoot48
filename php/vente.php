@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Page de vente</title>
         <link rel="stylesheet" href="../style/css/vente.css">
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
         <style>
         <?php 
             include "../style/css/vente.css"
@@ -13,21 +14,21 @@
     </head>
     <body>
         <?php
-            $connexion = mysqli_connect('localhost', 'root', 'root', 'db_autoscoot48');
+            $connexion = mysqli_connect('localhost', 'root', 'root', 'db_autoscoot48'); // Connexion à la base de donnée
         ?>
         <div class="logo">
             <img id="comeback" src="../images/Comeback.PNG" onclick="location.href='principal.php'">
             <h1>Autoscoot48</h1>
             <img id="blueCar" src="../images/Capture2.PNG">
         </div>
-        <form action="phpinsert.php" method="POST">
+        <form action="phpinsert.php" method="POST"> <!-- Création du formulaire pour mettre en vente la voiture -->
             <div class="form">
                 <div class="Left">
                     <label for="carImage">Ajouter une image du véhicule:</label><br>
                     <input type="file" id="carImage" name="carImage"><br>
 
                     <label for="idCarBrand">Ajouter une marque de voiture:</label><br>
-                    <select id="idCarBrand" name="idCarBrand">
+                    <select id="idCarBrand" name="idCarBrand"> <!-- Menu qui va afficher toutes les marques de voiture en faisant une query -->
                         <?php
                             $query = mysqli_query($connexion, "SELECT * FROM t_carbrand");
                             while ($row = $query->fetch_assoc()) {
@@ -54,7 +55,7 @@
                 </div>
                 <div class="Middle">
                     <label for= "idCarEngType">Car engine type:</label><br>
-                    <select id="idCarEngType" name="idCarEngType">
+                    <select id="idCarEngType" name="idCarEngType"> <!-- Menu qui va afficher toutes les modèles de moteurs en faisant une query -->
                         <?php
                             $query = mysqli_query($connexion, "SELECT * FROM t_carengtype");
                             while ($row = $query->fetch_assoc()) {

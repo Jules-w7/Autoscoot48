@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voiture</title>
     <link rel="stylesheet" href="../style/css/descriptive.css">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
     <style>
         <?php include "../style/css/descriptive.css"
@@ -49,7 +50,7 @@
                     <p>Description: <?php echo $carDetails['carDescription']; ?></p>
                 </div>
                 <div id="ContactButton">
-                    <button id="Contact" onclick="window.location.href='principal.php'">Contactez l'annonceur</button>
+                    <button id="Contact" onclick="window.location.href='principal.php')">Contactez l'annonceur</button>
                 </div>
             </div>
     <?php
