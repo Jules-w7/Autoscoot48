@@ -30,7 +30,6 @@
             if($result) {
                 $carDetails = mysqli_fetch_assoc($result);
     ?> 
-            
             <div id="description">
                 <div id="left">
                     <p>Marque: <?php echo $carDetails['cbrName']; ?></p>
