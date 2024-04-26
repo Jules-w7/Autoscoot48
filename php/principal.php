@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/Logo-icon.png">
     <script type="text/javascript" src="../style/js/index.js"></script>
     <style>
         <?php include "../style/css/principal.css"
@@ -28,20 +28,20 @@
     <div id="Filters">
         <div id="filter1" style="display: none;"> <!-- Box de filtre pour la marque de voiture -->
             <form method="get"> <!-- Création d'un formulaire au quel on va attribuer un nom et ensuite on va appeler dans le code php ce que l'uilisteur à rentrer graçe au nom -->
-                <input type="text" name="brand" placeholder="Cherchez par marque">
-                <input type="submit" value="Search">
+                <input type="text" id="inputFilter" name="brand" placeholder="Cherchez par marque">
+                <input type="submit" id="SearchFilter" value="Search">
             </form>
         </div>
         <div id="filter2" style="display: none;"> <!-- Box de filtre pour la couleur de la voiture -->
             <form method="get">
-                <input type="text" name="color" placeholder="Cherchez par couleur">
-                <input type="submit" value="Search">
+                <input type="text" id="inputFilter" name="color" placeholder="Cherchez par couleur">
+                <input type="submit" id="SearchFilter" value="Search">
             </form>
         </div>
         <div id="filter3" style="display: none;"> <!-- Box de filtre pour le kilométrage de la voiture -->
             <form method="get"> 
-                <input type="text" name="distance" placeholder="Cherchez par kilométrage">
-                <input type="submit" value="Search">
+                <input type="text" id="inputFilter" name="distance" placeholder="Cherchez par kilométrage">
+                <input type="submit" id="SearchFilter" value="Search">
             </form>
         </div>
     </div>
@@ -70,7 +70,7 @@
 
         while ($ligne = mysqli_fetch_assoc($resultat)) {
     ?>
-        <div id='carAnnonce' onclick="location.href='descriptive.php?id=<?php echo $ligne['idCar']; ?>'"> <!-- Création des div qui va rentrer les éléments dans la div en fonction de la query -->
+        <div id='carAnnonce' onclick="location.href='descriptive.php?id=<?php echo $ligne['idCar']; ?>'"> <!-- Créer une div en html dans laquelle quelques éléments sera rentré -->
             <?php echo $ligne['carDealerAd'] . "<br>" . $ligne['cbrName'] . "<br>" . $ligne['carDescription'] . "<br>" . $ligne['carPrice'] . " CHF"; ?>
         </div>
         <br>

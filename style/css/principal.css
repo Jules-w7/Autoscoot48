@@ -77,3 +77,14 @@ body {
     text-decoration: underline;
     color: white;
 }
+
+#inputFilter {
+    background-color: #efedee;
+    border-radius: 30px;
+    border-width: 1px;
+}
+
+#SearchFilter {
+    border-width: 1px;
+    background-color: #cdcdd4;
+}

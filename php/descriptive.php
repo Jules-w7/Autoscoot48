@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Voiture</title>
     <link rel="stylesheet" href="../style/css/descriptive.css">
-    <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../images/Logo-icon.png">
 </head>
     <style>
         <?php include "../style/css/descriptive.css"

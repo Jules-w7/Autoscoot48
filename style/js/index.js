@@ -28,7 +28,6 @@ function showDistance() {
 }
 
 /*
-
 var carAnnonces = document.querySelectorAll('.carAnnonce');
 carAnnonces.forEach(function(carAnnonce) {
         carAnnonce.addEventListener('click', function() {
@@ -36,5 +35,4 @@ carAnnonces.forEach(function(carAnnonce) {
         window.location.href = 'descriptive.php?id=' + carId;
     });
 });
-
 */
