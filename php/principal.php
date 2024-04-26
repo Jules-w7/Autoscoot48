@@ -48,7 +48,7 @@
 <body>
     <p></p>
     <?php 
-    $connexion = mysqli_connect('localhost', 'root', 'root', 'db_autoscoot48'); // Query pour afficher toutes les marques de voitures
+    $connexion = mysqli_connect('localhost', 'root', 'root', 'db_autoscoot48');
         $query = "SELECT t_cars.idCar, t_cars.carDealerAd, t_carbrand.cbrName, t_cars.carDescription, t_cars.carPrice FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand"; // query initial pour afficher toutes les voitures sur la page principal
         
         if(isset($_GET['brand'])) {
