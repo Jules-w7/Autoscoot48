@@ -3,7 +3,9 @@ body {
 }
 
 .logo {
-    display: flex; 
+    width: 100%;
+    display: flex;
+    float: left;
 }
 
 #blueCar {
@@ -30,7 +32,7 @@ body {
 
 #separation {
     background-color: grey;
-    width: 192vh;
+    width: 100%;
     height: 5px;
     border-radius: 10px;
 }
@@ -55,7 +57,7 @@ body {
     background-color: #4A9BD6;
     border: solid#4A9BD6;
     border-radius: 10px;
-    width: 260.99px;
+    width: 410px;
     height: 1cm;
     transition: 0.5s;
     color: white;
@@ -70,3 +72,52 @@ body {
     background-color: white;
     transform: scale(0.95);
 }
+
+@media only screen and (max-width: 1179px) {
+    #left, #Middle, #Right {
+        width: 812px;
+        height: 242.5px;
+        font-size: 40px;
+    }
+
+    #Moteur {
+        margin-top: 102.18px;
+        height: 38.2px;
+    }
+
+    #Kilometrage {
+        margin-top: 32px;
+        height: 38.2px;
+    }
+
+    #Prix {
+        margin-top: 64px;
+        margin-bottom: 32px;
+        height: 80px;
+    }
+
+    #carDescription {
+        font-size: 40px;
+    }
+
+    #Contact {
+        width: 1165px;
+        height: 75.58px;
+        font-size: 40px;
+        border-radius: 20px;
+    }
+
+    #title {
+        font-size: 50px;
+    }
+
+    #blueCar {
+        margin-top: 33.5px;
+        margin-bottom: 33.5px;
+    }
+
+    #comeback {
+        width: 150px;
+    }
+}
+

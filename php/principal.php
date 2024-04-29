@@ -15,7 +15,7 @@
     </style>
 </head>
     <div class="logo">
-        <h1>Autoscoot48</h1>
+        <h1 id="nameWebsite">Autoscoot48</h1>
         <img id="blueCar" src="../images/Capture2.PNG">
     </div>
     <div class="upperBar">

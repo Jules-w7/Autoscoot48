@@ -42,17 +42,7 @@
 
                     <label for="carColor">Ajouter une couleur:</label><br>
                     <input type="text" id="carColor" name="carColor"><br>
-
-                    <br>
-                    <hr id="separation">
-
-                    <label for="carDescription">Ajouter une description:</label><br>
-                    <input type="text" id="carDescription" name="carDescription"><br>
-                    
-                    <br>
-
-                    <input type="submit" id="submitButton">
-                </div>
+                    </div>
                 <div class="Middle">
                     <label for= "idCarEngType">Car engine type:</label><br>
                     <select id="idCarEngType" name="idCarEngType"> <!-- Menu qui va afficher toutes les modèles de moteurs en faisant une query -->
@@ -73,6 +63,17 @@
 
                     <label for="carDealerAd">Car dealer adress:</label><br>
                     <input type="text" id="carDealerAd" name="carDealerAd"><br> 
+                </div>
+                <hr id="separation">
+                <div class="Bottom">
+                    <br>
+        
+                    <label for="carDescription">Ajouter une description:</label><br>
+                    <input type="text" id="carDescription" name="carDescription"><br>
+                    
+                    <br>
+
+                    <input type="submit" id="submitButton">
                 </div>
             </div>
         </form>

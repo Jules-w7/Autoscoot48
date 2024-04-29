@@ -14,7 +14,7 @@
 <body>
     <div class="logo">
         <img id="comeback" src="../images/Comeback.PNG" onclick="location.href='principal.php'">
-        <h1>Autoscoot48</h1>
+        <h1 id="title">Autoscoot48</h1>
         <img id="blueCar" src="../images/Capture2.PNG">
     </div>
     <?php 
@@ -49,7 +49,7 @@
                 </div>
                 <hr id="separation">
                 <div id="Bottom">
-                    <p>Description: <?php echo $carDetails['carDescription']; ?></p>
+                    <p id="carDescription">Description: <?php echo $carDetails['carDescription']; ?></p>
                 </div>
                 <div id="ContactButton">
                     <button id="Contact" onclick="window.location.href='principal.php')">Contactez l'annonceur</button>
