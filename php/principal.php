@@ -11,18 +11,17 @@
     <link rel="icon" type="image/x-icon" href="../images/Logo-icon.png">
     <script type="text/javascript" src="../style/js/index.js"></script>
     <style>
-        <?php include "../style/css/principal.css"
-        ?>
+        <?php include "../style/css/principal.css"?>
     </style>
 </head>
     <div class="logo">
         <h1>Autoscoot48</h1>
-        <img id="blueCar" src="../images/Capture2.PNG" onclick="">
+        <img id="blueCar" src="../images/Capture2.PNG">
     </div>
     <div class="upperBar">
-        <p id="Brand">Marque</p><img src="../images/Capturefleche.PNG" id="flechedetail" onclick="showBrand()">
-        <p id="Color">Couleur</p><img src="../images/Capturefleche.PNG" id="flechedetail" onclick="showColor()">
-        <p id="Distance">Kilométrage</p><img src="../images/Capturefleche.PNG" id="flechedetail" onclick="showDistance()">
+        <p id="Brand">Marque</p><img src="../images/Capturefleche.PNG" alt="flechefilter" id="flechedetail" onclick="showBrand()">
+        <p id="Color">Couleur</p><img src="../images/Capturefleche.PNG" alt="flechefilter" id="flechedetail" onclick="showColor()">
+        <p id="Distance">Kilométrage</p><img src="../images/Capturefleche.PNG" alt="flechefilter" id="flechedetail" onclick="showDistance()">
         <p id="Redirect"><a href="vente.php" id="SellCar">Publier une annonce</a></p>
     </div>
     <div id="Filters">
