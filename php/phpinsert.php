@@ -11,7 +11,9 @@
     <?php
             $connexion = mysqli_connect('localhost', 'root', 'root', 'db_autoscoot48');
             // Code qui sers à inserer les données de la voiture dans la base de données
-            
+            $target_path = "../images/carPictures/";
+            $target_path = $target_path.basename($_FILES['carImage']['name']);
+
             $carColor = $_REQUEST['carColor'];
             $carPrice = $_REQUEST['carPrice'];
             $carType = $_REQUEST['carModel'];
@@ -20,9 +22,14 @@
             $carDescription = $_REQUEST['carDescription'];
             $idCarEngType = $_REQUEST['idCarEngType'];
             $idCarBrand = $_REQUEST['idCarBrand'];
-            $carImage = $_REQUEST['carImage'];
 
-            $sql = "INSERT INTO t_cars (carColor,carPrice,carModel,carDist,carDealerAd,carDescription,idCarEngType,idCarBrand,carImage) VALUES ('$carColor','$carPrice','$carType','$carDist','$carDealerAd','$carDescription','$idCarEngType','$idCarBrand','$carImage')";
+            $sql = "INSERT INTO t_cars (carColor,carPrice,carModel,carDist,carDealerAd,carDescription,idCarEngType,idCarBrand,carImage) VALUES ('$carColor','$carPrice','$carType','$carDist','$carDealerAd','$carDescription','$idCarEngType','$idCarBrand','$target_path')";
+
+            if(move_uploaded_file($_FILES['carImage']['tmp_name'], $target_path)) {  
+                echo "File uploaded successfully!";  
+            } else {  
+                echo "Sorry, file not uploaded, please try again!";  
+            }  
 
             if(mysqli_query($connexion, $sql)){
                 echo "The annonce has succesfully been published!";

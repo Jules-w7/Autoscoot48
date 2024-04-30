@@ -73,6 +73,12 @@ body {
     transform: scale(0.95);
 }
 
+#carImage {
+    border: solid black;
+    border-radius: 10px;
+    width: 20%;
+}
+
 @media only screen and (max-width: 1179px) {
     #left, #Middle, #Right {
         width: 812px;
@@ -125,5 +131,9 @@ body {
     #title {
         margin-top: 42.5px;
         font-size: 55px;
+    }
+
+    #carImage {
+        width: 60%;
     }
 }

@@ -21,7 +21,7 @@
             <h1>Autoscoot48</h1>
             <img id="blueCar" src="../images/Capture2.PNG">
         </div>
-        <form action="phpinsert.php" method="POST"> <!-- Création du formulaire pour mettre en vente la voiture -->
+        <form action="phpinsert.php" method="POST" enctype="multipart/form-data"> <!-- Création du formulaire pour mettre en vente la voiture -->
             <div class="form">
                 <div class="Left">
                     <label for="carImage">Ajouter une image du véhicule:</label><br>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : ven. 26 avr. 2024 à 06:26
+-- Généré le : mar. 30 avr. 2024 à 08:59
 -- Version du serveur :  5.7.11
 -- Version de PHP : 8.0.1
 
@@ -108,7 +108,8 @@ INSERT INTO `t_cars` (`idCar`, `carColor`, `carPrice`, `carModel`, `carDist`, `c
 (16, 'Gris avec ligne noir', 300000, '911 GT2 RS', 10, 'Rue de la gare 2, Nyon', 'La voiture est neuve', '8', '9', ''),
 (18, 'Gris', 7000, 'Golf', 300000, 'Rue de la colombiÃ¨re 12', 'La voiture marche parfaitement', '1', '2', ''),
 (19, 'Bleu', 27800, 'Qashqai', 370000, 'Route de la dÃ´le 19', 'La voiture est en parfait etat', '1', '10', ''),
-(20, 'Grey', 5000, 'Qashqai', 300000, 'Route de crassier 25', 'En parfait etat', '1', '10', '');
+(20, 'Grey', 5000, 'Qashqai', 300000, 'Route de crassier 25', 'En parfait etat', '1', '10', ''),
+(29, 'Bleu', 20000, 'Focus', 300000, 'Rue du sÃ©beillon 15', 'La voiture a ete refaite', '1', '11', '../images/carPictures/TestFordFocus.jpeg');
 
 --
 -- Index pour les tables déchargées
@@ -157,7 +158,7 @@ ALTER TABLE `t_carengtype`
 -- AUTO_INCREMENT pour la table `t_cars`
 --
 ALTER TABLE `t_cars`
-  MODIFY `idCar` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `idCar` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

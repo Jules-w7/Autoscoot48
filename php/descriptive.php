@@ -25,14 +25,14 @@
             $connexion = mysqli_connect('localhost', 'root', 'root', 'db_autoscoot48');
             
             // Query toutes les données à afficher
-            $query = "SELECT t_cars.carDealerAd, t_carbrand.cbrName, t_carengtype.cetType , t_cars.carDescription, t_cars.carPrice, t_cars.carColor, t_cars.carModel, t_cars.carDist FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand INNER JOIN `t_carengtype` ON t_cars.idCarEngType = t_carengtype.idCarEngType WHERE t_cars.idCar = $carId";
+            $query = "SELECT t_cars.carDealerAd, t_carbrand.cbrName, t_carengtype.cetType , t_cars.carDescription, t_cars.carPrice, t_cars.carColor, t_cars.carModel, t_cars.carDist, t_cars.carImage FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand INNER JOIN `t_carengtype` ON t_cars.idCarEngType = t_carengtype.idCarEngType WHERE t_cars.idCar = $carId";
 
             $result = mysqli_query($connexion, $query);
 
             if($result) {
                 $carDetails = mysqli_fetch_assoc($result);
     ?> 
-    
+            <img id="carImage" src=<?php echo $carDetails['carImage'];?>>
             <div id="description">
                 <div id="left">
                     <p>Marque: <?php echo $carDetails['cbrName']; ?></p>
