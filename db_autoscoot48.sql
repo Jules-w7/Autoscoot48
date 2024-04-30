@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : mar. 30 avr. 2024 à 08:59
+-- Généré le : mar. 30 avr. 2024 à 09:11
 -- Version du serveur :  5.7.11
 -- Version de PHP : 8.0.1
 
@@ -101,14 +101,14 @@ CREATE TABLE `t_cars` (
 --
 
 INSERT INTO `t_cars` (`idCar`, `carColor`, `carPrice`, `carModel`, `carDist`, `carDealerAd`, `carDescription`, `idCarEngType`, `idCarBrand`, `carImage`) VALUES
-(5, 'Violet', 30000, 'Polo', 100000, 'Rue du sebeillon 12', 'Grosse rayure sur tout le cote droit de la voiture', '1', '2', ''),
-(6, 'Bleu', 15000, 'Amg E53', 300000, 'Rue du sebeillon 14', 'Voiture en parfait etat', '2', '1', ''),
-(14, 'Vert', 400000, 'Sportage', 0, 'Rue du sÃ©beillon 12', 'Voiture refaite entierement', '1', '5', ''),
-(15, 'Rouge', 1000, '125d M sport', 1500000, 'Rue du sÃ©beillon 15', 'Expertise faite', '1', '8', ''),
-(16, 'Gris avec ligne noir', 300000, '911 GT2 RS', 10, 'Rue de la gare 2, Nyon', 'La voiture est neuve', '8', '9', ''),
-(18, 'Gris', 7000, 'Golf', 300000, 'Rue de la colombiÃ¨re 12', 'La voiture marche parfaitement', '1', '2', ''),
-(19, 'Bleu', 27800, 'Qashqai', 370000, 'Route de la dÃ´le 19', 'La voiture est en parfait etat', '1', '10', ''),
-(20, 'Grey', 5000, 'Qashqai', 300000, 'Route de crassier 25', 'En parfait etat', '1', '10', ''),
+(5, 'Gris', 30000, 'Polo', 100000, 'Rue du sebeillon 12', 'Grosse rayure sur tout le cote droit de la voiture', '1', '2', '../images/carPictures/PoloGris.JPG'),
+(6, 'Bleu', 15000, 'Amg E53', 300000, 'Rue du sebeillon 14', 'Voiture en parfait etat', '2', '1', '../images/carPictures/MercedesAmge53.jpg'),
+(14, 'Vert', 400000, 'Sportage', 0, 'Rue du sÃ©beillon 12', 'Voiture refaite entierement', '1', '5', '../images/carPictures/GreenKiaSportage.JPG'),
+(15, 'Rouge', 1000, '125d M sport', 1500000, 'Rue du sÃ©beillon 15', 'Expertise faite', '1', '8', '../images/carPictures/BMWrouge.JPG'),
+(16, 'Gris avec ligne noir', 300000, '911 GT2 RS', 10, 'Rue de la gare 2, Nyon', 'La voiture est neuve', '8', '9', '../images/carPictures/Porsche911.jpg'),
+(18, 'Gris', 7000, 'Golf', 300000, 'Rue de la colombiÃ¨re 12', 'La voiture marche parfaitement', '1', '2', '../images/carPictures/VwGOLF.JPG'),
+(19, 'Bleu', 27800, 'Qashqai', 370000, 'Route de la dÃ´le 19', 'La voiture est en parfait etat', '1', '10', '../images/carPictures/BleuQashqai.jpg'),
+(20, 'Grey', 5000, 'Qashqai', 300000, 'Route de crassier 25', 'En parfait etat', '1', '10', '../images/carPictures/Qashqaigris.jpg'),
 (29, 'Bleu', 20000, 'Focus', 300000, 'Rue du sÃ©beillon 15', 'La voiture a ete refaite', '1', '11', '../images/carPictures/TestFordFocus.jpeg');
 
 --
