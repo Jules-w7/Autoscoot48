@@ -129,13 +129,60 @@ body {
 }
 
 @media only screen and (max-width: 1179px) {
-    .Left, .Middle, .Right, .Bottom {
-        font-size: 30px;
-        width: 450px;
-        height: 150px;
+    .Left {
+        font-size: 35px;
+        width: 800px;
+        height: 360px;
+        margin-top: 30px;
+    }
+
+    .Middle {
+        font-size: 35px;
+        width: 800px;
+        height: 200px;
+        margin-top: 80px;
+    }
+
+    .Right {
+        font-size: 35px;
+        width: 800px;
+        height: 200px;
+        margin-top: 80px;
+    }
+
+    .Bottom {
+        font-size: 35px;
+        width: 800px;
+        height: 200px;
     }
 
     #carColor,#carPrice,#carModel,#carDist,#carDealerAd,#carDescription,#idCarEngType,#idCarBrand,#carImage {
-        width: 350px;
+        width: 1163px;
+        height: 40px;
+        font-size: 35px;
+        border: solid black;
+        border-radius: 10px;
+        border-width: 2px;
+    }
+
+    #submitButton {
+        width: 1163px;
+        height: 70px;
+        font-size: 40px;
+        border-radius: 20px;
+    }
+
+    .logo {
+        font-size: 30px;
+    }
+
+    #blueCar {
+        margin: 15px;
+        width: 15%;
+        height: 15%;
+    }
+
+    #comeback {
+        width: 200.38px;
     }
 }

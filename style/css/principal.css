@@ -79,12 +79,14 @@ body {
 }
 
 #inputFilter {
+    border: solid black;
     background-color: #efedee;
     border-radius: 30px;
     border-width: 1px;
 }
 
 #SearchFilter {
+    border: solid black;
     border-width: 1px;
     background-color: #cdcdd4;
 }
@@ -119,5 +121,21 @@ body {
     #blueCar {
         margin-top: 33.6px;
         margin-bottom: 33.6px;
+    }
+
+    #form1, #form2, #form3 {
+        width: 50%;
+    }
+
+    #inputFilter {
+        width: 350px;
+        height: 50px;
+        font-size: 30px;
+    }
+
+    #SearchFilter {
+        height: 54px;
+        width: 150px;
+        font-size: 30px;
     }
 }

@@ -63,7 +63,7 @@
 
                     <label for="carDealerAd">Car dealer adress:</label><br>
                     <input type="text" id="carDealerAd" name="carDealerAd"><br> 
-                </div>
+                </div><br>
                 <hr id="separation">
                 <div class="Bottom">
                     <br>
