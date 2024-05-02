@@ -52,7 +52,7 @@
                     <p id="carDescription">Description: <?php echo $carDetails['carDescription']; ?></p>
                 </div>
                 <div id="ContactButton">
-                    <button id="Contact" onclick="window.location.href='principal.php')">Contactez l'annonceur</button>
+                    <button id="Contact" onclick="window.location.href='principal.php'">Contactez l'annonceur</button>
                 </div>
             </div>
     <?php

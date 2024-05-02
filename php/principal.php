@@ -49,7 +49,7 @@
     <p></p>
     <?php 
     $connexion = mysqli_connect('localhost', 'root', 'root', 'db_autoscoot48');
-        $query = "SELECT t_cars.idCar, t_cars.carDealerAd, t_carbrand.cbrName, t_cars.carDescription, t_cars.carPrice FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand"; // query initial pour afficher toutes les voitures sur la page principal
+        $query = "SELECT t_cars.idCar, t_cars.carDealerAd, t_carbrand.cbrName, t_cars.carDescription, t_cars.carPrice, t_cars.carImage FROM `t_cars` INNER JOIN `t_carbrand` ON t_cars.idCarBrand = t_carbrand.idCarBrand"; // query initial pour afficher toutes les voitures sur la page principal
         
         if(isset($_GET['brand'])) {
             $brand = mysqli_real_escape_string($connexion, $_GET['brand']);
@@ -70,8 +70,8 @@
 
         while ($ligne = mysqli_fetch_assoc($resultat)) {
     ?>
-        <div id='carAnnonce' onclick="location.href='descriptive.php?id=<?php echo $ligne['idCar']; ?>'"> <!-- Créer une div en html dans laquelle quelques éléments sera rentré -->
-            <?php echo $ligne['carDealerAd'] . "<br>" . $ligne['cbrName'] . "<br>" . $ligne['carDescription'] . "<br>" . $ligne['carPrice'] . " CHF"; ?>
+        <div id='carAnnonce' onclick="location.href='descriptive.php?id=<?php echo $ligne['idCar']; ?>'"> 
+            <?php echo $ligne['carDealerAd'] . "<br>" . $ligne['cbrName'] . "<br>" . $ligne['carDescription'] . "<br>" . $ligne['carPrice'] . " CHF" ?>
         </div>
         <br>
     <?php
