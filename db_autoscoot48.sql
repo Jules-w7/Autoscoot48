@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost
--- Généré le : mar. 30 avr. 2024 à 09:11
+-- Généré le : jeu. 02 mai 2024 à 09:08
 -- Version du serveur :  5.7.11
 -- Version de PHP : 8.0.1
 
@@ -109,7 +109,8 @@ INSERT INTO `t_cars` (`idCar`, `carColor`, `carPrice`, `carModel`, `carDist`, `c
 (18, 'Gris', 7000, 'Golf', 300000, 'Rue de la colombiÃ¨re 12', 'La voiture marche parfaitement', '1', '2', '../images/carPictures/VwGOLF.JPG'),
 (19, 'Bleu', 27800, 'Qashqai', 370000, 'Route de la dÃ´le 19', 'La voiture est en parfait etat', '1', '10', '../images/carPictures/BleuQashqai.jpg'),
 (20, 'Grey', 5000, 'Qashqai', 300000, 'Route de crassier 25', 'En parfait etat', '1', '10', '../images/carPictures/Qashqaigris.jpg'),
-(29, 'Bleu', 20000, 'Focus', 300000, 'Rue du sÃ©beillon 15', 'La voiture a ete refaite', '1', '11', '../images/carPictures/TestFordFocus.jpeg');
+(29, 'Bleu', 20000, 'Focus', 300000, 'Rue du sÃ©beillon 15', 'La voiture a ete refaite', '1', '11', '../images/carPictures/TestFordFocus.jpeg'),
+(30, 'Gris', 105000, 'RS7', 0, 'Rue du sÃ©beillon 12, 1004 Lausanne', 'La voiture est equipe du pack abt', '1', '4', '../images/carPictures/AudiRS7.jpg');
 
 --
 -- Index pour les tables déchargées
@@ -158,7 +159,7 @@ ALTER TABLE `t_carengtype`
 -- AUTO_INCREMENT pour la table `t_cars`
 --
 ALTER TABLE `t_cars`
-  MODIFY `idCar` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
+  MODIFY `idCar` int(1) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

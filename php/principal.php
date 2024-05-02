@@ -77,6 +77,8 @@
     <?php
         }
     ?>
-
+    <div id="container">
+        <button id="Mainmenu" onclick="window.location.href='principal.php'">Revenir au menu principal</button>
+    </div>
 </body>
 </html>
