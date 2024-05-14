@@ -29,19 +29,19 @@
         <div id="filter1" style="display: none;"> <!-- Box de filtre pour la marque de voiture -->
             <form method="get" id="form1"> <!-- Création d'un formulaire au quel on va attribuer un nom et ensuite on va appeler dans le code php ce que l'uilisteur à rentrer graçe au nom -->
                 <input type="text" id="inputFilter" name="brand" placeholder="Cherchez par marque">
-                <input type="submit" id="SearchFilter" value="Search">
+                <input type="submit" id="SearchFilter" value="Recherche">
             </form>
         </div>
         <div id="filter2" style="display: none;"> <!-- Box de filtre pour la couleur de la voiture -->
             <form method="get" id="form2">
                 <input type="text" id="inputFilter" name="color" placeholder="Cherchez par couleur">
-                <input type="submit" id="SearchFilter" value="Search">
+                <input type="submit" id="SearchFilter" value="Recherche">
             </form>
         </div>
         <div id="filter3" style="display: none;"> <!-- Box de filtre pour le kilométrage de la voiture -->
             <form method="get" id="form3"> 
                 <input type="text" id="inputFilter" name="distance" placeholder="Cherchez par kilométrage">
-                <input type="submit" id="SearchFilter" value="Search">
+                <input type="submit" id="SearchFilter" value="Recherche">
             </form>
         </div>
     </div>

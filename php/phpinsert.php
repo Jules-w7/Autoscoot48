@@ -33,7 +33,6 @@
 
             if(mysqli_query($connexion, $sql)){
                 echo "The annonce has succesfully been published!";
-                
             } else{
                 echo "Oops an error has occured!"
                     . mysqli_error($connexion);
