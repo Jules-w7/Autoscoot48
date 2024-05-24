@@ -77,7 +77,7 @@
     <?php
         }
     ?>
-    <div id="container">
+    <div id="container"> <!-- Bouton qui sert a réinitialiser la page -->
         <button id="Mainmenu" onclick="window.location.href='principal.php'">Revenir au menu principal</button>
     </div>
 </body>

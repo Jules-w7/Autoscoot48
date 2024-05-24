@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../images/Logo-icon.png">
-    <title>Insert into forms</title>
+    <title>Vente</title>
 </head>
 <body>
     <?php
@@ -26,15 +26,15 @@
             $sql = "INSERT INTO t_cars (carColor,carPrice,carModel,carDist,carDealerAd,carDescription,idCarEngType,idCarBrand,carImage) VALUES ('$carColor','$carPrice','$carType','$carDist','$carDealerAd','$carDescription','$idCarEngType','$idCarBrand','$target_path')";
 
             if(move_uploaded_file($_FILES['carImage']['tmp_name'], $target_path)) {  
-                echo "File uploaded successfully!";  
+                echo "L'image a bien été envoyé, ";  
             } else {  
-                echo "Sorry, file not uploaded, please try again!";  
+                echo "L'image a mal été envoyé au serveur, veuillez re-essayer!";  
             }  
 
             if(mysqli_query($connexion, $sql)){
-                echo "The annonce has succesfully been published!";
+                echo "L'annonce a été publiée !";
             } else{
-                echo "Oops an error has occured!"
+                echo "Une erreur s'est produite"
                     . mysqli_error($connexion);
             }
 
